@@ -1,3 +1,4 @@
+<img width="1297" height="605" alt="oil_spill_comparison_truth_vs_pinn" src="https://github.com/user-attachments/assets/4ee1d75a-6221-4036-8ac4-c66baf336fad" />
 # osaka-bay-ai-pinn
 
 Physics-Informed Neural Networks (PINNs) for Osaka Bay Tidal Flow and Oil Spill Estimation using STOC LST data.
