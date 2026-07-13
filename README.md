@@ -1,4 +1,14 @@
 <img width="1297" height="605" alt="oil_spill_comparison_truth_vs_pinn" src="https://github.com/user-attachments/assets/4ee1d75a-6221-4036-8ac4-c66baf336fad" />
+## 📊 成果物（Area 04の推定結果）
+## 📊 予測結果の比較 (Ground Truth vs PINN)
+![Oil Spill Comparison](./oil_spill_comparison_truth_vs_pinn.gif)
+*AIによって推定・可視化された大阪湾奥部の流速分布*
+> **視覚的評価のポイント**
+> - **左（Ground Truth）**: 海洋数値モデル（STOC）による津波発生時のオイル拡散シミュレーション。
+> - **右（PINN Surrogate）**: 物理法則（連続の式・移流拡散方程式）を学習した提案モデルによる流速場およびオイル濃度の推定結果。
+> 
+> 膨大な格子計算を行う数値シミュレータに対し、提案手法であるPINNは座標を入力するだけで**物理的に矛盾のないダイナミクスを高速かつ連続的にサロゲート（代理予測）**できていることが確認できます。特に、大ショック期における複雑な地形沿いのオイルプリームの形状変化を正確に捉えています。
+
 # osaka-bay-ai-pinn
 
 Physics-Informed Neural Networks (PINNs) for Osaka Bay Tidal Flow and Oil Spill Estimation using STOC LST data.
@@ -42,7 +52,7 @@ Physics-Informed Neural Networks (PINNs) for Osaka Bay Tidal Flow and Oil Spill 
 
 ---
 
-## 📂 ディレクトリ構造（例）
+## 📂 ディレクトリ構造
 ```text
 ├── src/
 │   ├── data_extraction.f90  # 5.6GBバイナリを高速処理するFortranスクリプト
@@ -51,8 +61,3 @@ Physics-Informed Neural Networks (PINNs) for Osaka Bay Tidal Flow and Oil Spill 
 ├── data/
 │   └── osaka_bay_flow.csv    # FortranによってArea 01から抽出されたデータ
 └── README.md
-
-## 📊 成果物（Area 04の推定結果）
-## 📊 予測結果の比較 (Ground Truth vs PINN)
-![Oil Spill Comparison](./oil_spill_comparison_truth_vs_pinn.gif)
-*AIによって推定・可視化された大阪湾奥部の流速分布*
