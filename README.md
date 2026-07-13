@@ -52,6 +52,6 @@ Physics-Informed Neural Networks (PINNs) for Osaka Bay Tidal Flow and Oil Spill 
 └── README.md
 
 ## 📊 成果物（Area 04の推定結果）
-![Area 04 Map](<img width="1297" height="605" alt="oil_spill_comparison_truth_vs_pinn" src="https://github.com/user-attachments/assets/977cc59d-39af-4f6c-aba9-5962dc0fd58b" />
-)
+## 📊 予測結果の比較 (Ground Truth vs PINN)
+![Oil Spill Comparison](./oil_spill_comparison_truth_vs_pinn.gif)
 *AIによって推定・可視化された大阪湾奥部の流速分布*
