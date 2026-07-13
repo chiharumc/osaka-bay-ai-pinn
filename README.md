@@ -1,9 +1,10 @@
 <img width="1297" height="605" alt="oil_spill_comparison_truth_vs_pinn" src="https://github.com/user-attachments/assets/4ee1d75a-6221-4036-8ac4-c66baf336fad" />
+
 ## 📊 成果物（Area 04の推定結果）
 ## 📊 予測結果の比較 (Ground Truth vs PINN)
 ![Oil Spill Comparison](./oil_spill_comparison_truth_vs_pinn.gif)
 *AIによって推定・可視化された大阪湾奥部の流速分布*
-> **視覚的評価のポイント**
+
 > - **左（Ground Truth）**: 海洋数値モデル（STOC）による津波発生時のオイル拡散シミュレーション。
 > - **右（PINN Surrogate）**: 物理法則（連続の式・移流拡散方程式）を学習した提案モデルによる流速場およびオイル濃度の推定結果。
 > 
